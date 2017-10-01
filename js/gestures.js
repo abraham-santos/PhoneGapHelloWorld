@@ -2,7 +2,6 @@
 var app = {
 	
 	inicio: function(){
-		
 		this.iniciaBotones();
 		this.iniciaFastClick();
 		this.iniciaHammer();
@@ -15,11 +14,11 @@ var app = {
 		
 		botonClaro.addEventListener('click', this.ponloClaro, false);
 		botonOscuro.addEventListener('click', this.ponloOscuro, false);
-	}
+	},
 	
 	iniciaFastClick: function(){
 		FastClick.attach(document.body);
-	}
+	},
 	
 	iniciaHammer: function(){
 		var zona = document.getElementById('zona-gestos');
